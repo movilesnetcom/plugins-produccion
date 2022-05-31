@@ -1,0 +1,88 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "co.com.netcom.qposplugin": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "com.ionic.keyboard": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "com.ourcodeworld.preventscreenshots": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "com.pylonproducts.wifiwizard": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-blur-app-privacy-screen": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-background-mode": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-bluetooth-serial": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-crypt-file": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-root-detection": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-tapjackingprotection": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-transport-security": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-wifiinfo": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-networkinterface": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    },
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "co.com.netcom.rbmmerchant"
+    }
+  }
+}

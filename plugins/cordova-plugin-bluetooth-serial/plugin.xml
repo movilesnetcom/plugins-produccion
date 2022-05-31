@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin
+    xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-bluetooth-serial"
+    version="0.4.4">
+
+    <name>Bluetooth Serial</name>
+    <description>Bluetooth Serial Communication Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>bluetooth, BLE, arduino</keywords>
+
+    <js-module src="www/bluetoothSerial.js" name="bluetoothSerial">
+        <clobbers target="window.bluetoothSerial" />
+    </js-module>
+
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/widget">
+            <feature name="BluetoothSerial">
+                <param name="android-package" value="com.megster.cordova.BluetoothSerial"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/com/megster/cordova/BluetoothSerial.java"
+            target-dir="src/com/megster/cordova"/>
+        <source-file src="src/android/com/megster/cordova/BluetoothSerialService.java"
+            target-dir="src/com/megster/cordova"/>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+        </config-file>
+
+    </platform>
+
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/widget">
+            <feature name="BluetoothSerial">
+                <param name="ios-package" value="BluetoothSerial" onload="true"/>
+            </feature>
+        </config-file>
+
+        <!-- Classical bluetooth -->
+        <header-file src="src/ios/BluetoothSerial.h" target-dir="BluetoothSerial" />
+        <source-file src="src/ios/BluetoothSerial.m" target-dir="BluetoothSerial" />
+        <header-file src="src/ios/EADSessionController.h" target-dir="BluetoothSerial" />
+        <source-file src="src/ios/EADSessionController.m" target-dir="BluetoothSerial" />
+
+        <!-- frameworks -->
+        <framework src="ExternalAccessory.framework" weak="true" />
+
+        <config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
+          <array>
+            <string>com.miura.shuttle</string>
+            <string>com.chargeanywhere.shuttle</string>
+          </array>
+        </config-file>
+
+    </platform>
+
+    <platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+             <feature name="BluetoothSerial">
+                 <param name="wp-package" value="BluetoothSerial"/>
+             </feature>
+         </config-file>
+
+
+         <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
+             <Capability Name="ID_CAP_PROXIMITY" />
+         </config-file>
+
+         <source-file src="src/wp/BluetoothSerial.cs" />
+         <source-file src="src/wp/BluetoothConnectionManager.cs" />
+
+    </platform>
+</plugin>

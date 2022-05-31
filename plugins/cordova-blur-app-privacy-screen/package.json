@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-blurry-privacy-screen",
+  "version": "0.0.1",
+  "description": "Blurs your app when put into the background to prevent iOS snapshot feature from showing sensitive information.",
+  "cordova": {
+    "id": "cordova-blur-app-privacy-screen",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lifeofcoding/cordova-blur-app-privacy-screen.git"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "hipaa",
+    "privacy",
+    "snapshot",
+    "switcher",
+    "secure"
+  ],
+  "author": "Jimmy Rousseau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lifeofcoding/cordova-blur-app-privacy-screen/issues"
+  },
+  "homepage": "https://github.com/lifeofcoding/cordova-blur-app-privacy-screen#readme"
+}

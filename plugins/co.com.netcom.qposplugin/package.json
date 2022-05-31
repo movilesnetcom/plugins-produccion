@@ -1,0 +1,18 @@
+{
+    "version": "1.0.4",
+    "name": "co.com.netcom.qposplugin",
+    "cordova_name": "qposplugin",
+    "description": "Ionic qpos Plugin",
+    "license": "Apache 2.0",
+    "repo": "",
+    "issue": "",
+    "keywords": [
+        "Ionic",
+        "qposplugin"
+    ],
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "engines": []
+}

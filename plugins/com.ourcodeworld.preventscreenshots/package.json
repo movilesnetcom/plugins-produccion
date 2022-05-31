@@ -1,0 +1,17 @@
+{
+    "version": "1.0.4",
+    "name": "com.ourcodeworld.preventscreenshots",
+    "cordova_name": "preventscreenshots",
+    "description": "Ionic preventscreenshots Plugin",
+    "license": "Apache 2.0",
+    "repo": "",
+    "issue": "",
+    "keywords": [
+        "Ionic",
+        "preventscreenshots"
+    ],
+    "platforms": [
+        "android"
+    ],
+    "engines": []
+}

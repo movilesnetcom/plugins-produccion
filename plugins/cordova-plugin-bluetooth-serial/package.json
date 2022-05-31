@@ -1,0 +1,18 @@
+{
+    "version": "1.0.4",
+    "name": "cordova-plugin-bluetooth-serial",
+    "cordova_name": "cordova-plugin-bluetooth-serial",
+    "description": "Ionic qpos Plugin",
+    "license": "Apache 2.0",
+    "repo": "",
+    "issue": "",
+    "keywords": [
+        "Ionic",
+        "cordova-plugin-bluetooth-serial"
+    ],
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "engines": []
+}

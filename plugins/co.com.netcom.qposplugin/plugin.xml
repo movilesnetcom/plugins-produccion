@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="co.com.netcom.qposplugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>QPOSPlugin</name>
+    <js-module name="QPOSPlugin" src="www/QPOSPlugin.js">
+        <clobbers target="qposplugin" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="config.xml">
+            <feature name="QPOSPlugin">
+                <param name="android-package" value="co.com.netcom.qposplugin.android.QPOSPlugin" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/" target-dir="src/co/com/netcom/qposplugin" />
+        <source-file src="libs/Android/" target-dir="libs/" />
+    </platform>
+    <platform name="ios">
+        <source-file src="src/ios/QPOSPlugin.m" />
+        <header-file src="src/ios/QPOSPlugin.h" />
+        <source-file src="src/ios/libqpos-ios-sdk.a" />
+        <header-file src="src/ios/QPOSService.h" />
+        <header-file src="src/ios/BTDeviceFinder.h" />
+        <header-file src="src/ios/util.h" />
+        <config-file target="config.xml" parent="/*">
+            <feature name="QPOSPlugin">
+                <param name="ios-package" value="QPOSPlugin" />
+            </feature>
+        </config-file>
+    </platform>
+
+</plugin>
